@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 function About(){
     return(
         <div className="main">
@@ -5,17 +7,17 @@ function About(){
             <h2 className="about-heading">About Us</h2>
             <div>
                 <p>
-                Lorem Ipsum is simply dummy text of the printing <br/>and typesetting industry.
-           Lorem Ipsum has been the<br/> industry's standard dummy text ever since the 1500s,<br/> 
-           when an unknown printer took a galley of type and <br/>scrambled it to make a type specimen book.<br/> 
-           It has survived not only five centuries,<br/> but also the leap into electronic typesetting, <br/>
-           remaining essentially unchanged.
+                At <b>Fun for Kids</b> , we believe that learning and fun go hand-in-hand! Our mission is to create a safe,<br/>
+                 colorful, and exciting space where kids can explore, discover, and enjoy new adventures every day.<br/>
+                  From interactive games to creative activities and educational stories, we offer something special <br/>
+                  for every curious mind. We are dedicated to providing a playful environment that sparks imagination,<br/>
+                   builds new skills, and brings smiles to kids of all ages!
                 </p>
             </div>
             </div>
             <div className="about-img">
             {/* <img src="img0005.jpeg" height={200} width={300}/> */}
-                <img src="img16.png"/>
+                <Image src="/img16.png" alt="" width={400} height={400}/>
                 
             </div>
             

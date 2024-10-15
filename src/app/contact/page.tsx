@@ -1,4 +1,4 @@
-// components/ContactForm.js
+import Image from "next/image";
 
 
 const ContactForm = () => {
@@ -6,7 +6,7 @@ const ContactForm = () => {
     <div className="main">
         <div className="cont">
         <h2 className="contact-heading">Contact Us</h2>
-        <div><img src="/img00.png"/></div>
+        <div><Image src="/img00.png" alt="" width={700} height={700}/></div>
         </div>
       
       <div>
@@ -29,8 +29,8 @@ const ContactForm = () => {
       </form>
       </div>
       <div className="right-img">
-      <div><img src="/img02.png"/></div>
-      <div><img src="/img01.png"/></div>
+      <div><Image src="/img02.png" alt="" width={300} height={300}/></div>
+      <div><Image src="/img01.png" alt="" width={300} height={300}/></div>
       </div>
       
       

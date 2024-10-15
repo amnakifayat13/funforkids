@@ -1,20 +1,21 @@
+import Image from "next/image"
 function Cards(){
     return(
         <div className="main">
              <div className="cardheading"> Cards</div>
              <div className="container">
-             <img  src="/img7.jpeg"/>
-             <img  src="/img8.jpeg"/>
-             <img  src="/img10.jpeg"/>
-             <img  src="/img9.jpeg"/>
-             <img  src="/img21.jpeg"/>
-             <img  src="/img22.jpeg"/>
-             <img  src="/img20.jpeg"/>
-             <img  src="/img25.jpeg"/>
-             <img  src="/img18.jpeg"/>
-             <img  src="/img26.jpeg"/>
-             <img  src="/img23.jpeg"/>
-             <img  src="/img24.jpeg"/>
+             <Image  src="/img7.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img8.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img10.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img9.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img21.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img22.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img20.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img25.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img18.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img26.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img23.jpeg" alt="" width={220} height={220}/>
+             <Image  src="/img24.jpeg" alt="" width={220} height={220}/>
              
              
              </div>
