@@ -2,7 +2,7 @@ function About(){
     return(
         <div className="main">
             <div className="about">
-            <h2 className="contact-heading">About Us</h2>
+            <h2 className="about-heading">About Us</h2>
             <div>
                 <p>
                 Lorem Ipsum is simply dummy text of the printing <br/>and typesetting industry.

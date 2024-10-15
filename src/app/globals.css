@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.main{
+.main {
     background: #da991b;
     width: 100%;
     height: 550px;
     display: flex;
     justify-content: space-around;
+    @apply flex-col md:flex-row; /* Stacks vertically on small screens, horizontally on medium and larger */
 }
-
 
 .navbar {
     display: flex;
@@ -17,151 +17,231 @@
     align-items: center;
     background-color: #5a9516;
     padding: 10px 20px;
-  }
-  
-  .navbar .logo a {
+    @apply flex-wrap; /* Adjusts for smaller screens */
+}
+
+.navbar .logo a {
     color: white;
     font-size: 24px;
     text-decoration: none;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
+    @apply text-lg md:text-2xl; /* Adjust font size for smaller screens */
+}
+
+.nav-links {
+    @apply list-none flex gap-4;
+    @apply flex-col md:flex-row; /* Stacks links vertically on small screens */
+}
+
+.nav-links li a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
-  }
-  
-  .nav-links li a:hover {
+    @apply text-sm md:text-base; /* Smaller font on small screens */
+}
+
+.nav-links li a:hover {
     background-color: #d5a31e;
     border-radius: 4px;
-  }
-  
-  .search-bar-container {
+}
+
+.search-bar-container {
     display: flex;
     align-items: center;
-  }
-  
-  .search-bar-container .icon {
+    @apply mt-4 md:mt-0; /* Adds margin-top on small screens */
+}
+
+.search-bar-container .icon {
     margin-right: 10px;
     font-size: 20px;
-    color:white;
-  }
-  
-  #search-bar {
+    color: white;
+}
+
+#search-bar {
     padding: 5px;
     border: none;
     border-radius: 4px;
-  }
-  .footer{
+}
+
+.footer {
     background: #da991b;
     display: flex;
     padding: 50px 10px 0px 80px;
-  }
-  .right-side-img{
+    /* @apply flex-col md:flex-row; Stack footer elements on small screens */
+}
+
+.right-side-img {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin: 40px;
-     
-    
+    @apply grid-cols-1 md:grid-cols-3; /* Single column on small screens */
+}
 
-  }
-  .right-side-img img{
+.right-side-img img {
     border-radius: 50%;
-    box-shadow: #5a9516;
-  }
+    box-shadow: 0px 4px 6px #5a9516;
+}
 
- .cardheading{
+.cardheading {
     margin-top: 50px;
     font-size: 45px;
     font-weight: bolder;
- } 
+    @apply text-center md:text-left; /* Centered on small screens */
+}
 
- .container{
+.container {
     display: grid;
-    grid-template-columns:repeat(6, 1fr) ;
+    grid-template-columns: repeat(6, 1fr);
     margin-top: 80px;
- }
+    @apply grid-cols-2  ml-10   md:grid-cols-6; /* 2 columns on small screens, 6 on medium */
+}
 
- .contact-heading{
-  margin-top: 50px;
+.contact-heading {
+    margin-top: 50px;
     font-size: 45px;
     font-weight: bolder;
     text-align: center;
-
- }
- .form{
+}
+.about-heading {
   margin-top: 50px;
-  margin-right: 100px;
- }
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+}
 
- .form {
-  display: flex;
-  flex-direction: column;
+.form {
+    margin-top: 50px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .label {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: black;
-  
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
 }
-
 
 .input,
 .textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  border: 1px solid #d5a31e;
-  font-size: 1rem;
-  background-color: rgba(206, 238, 118, 0.623);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #d5a31e;
+    font-size: 1rem;
+    background-color: rgba(206, 238, 118, 0.623);
 }
 
 .textarea {
-  resize: vertical;
-  height: 100px;
+    resize: vertical;
+    height: 100px;
 }
 
 .button {
-  background-color: #5a9516;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
+    background-color: #5a9516;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 .button:hover {
-  background-color: #203a03;
+    background-color: #203a03;
 }
 
-.cont img{
-  height: 300px;
+.cont img {
+    height: 300px;
+    width:300px; /* Full-width on small screens */
 }
 
-.right-img{
-  display: flex;
-  margin-top: 400px;
+.right-img {
+    display: flex;
+    margin-top: 400px;
 }
 
-.about p{
-  margin-top: 50px ;
-}
-.about{
-  margin-left: 400px;
+.about p {
+    margin-top: 50px;
 }
 
-.about-img{
-  display: flex;
+
+
+.about-img {
+    display: flex; 
 }
 
+/* mediaquery  */
+@media (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    .main{
+      height:2000px;
+    }
+    .img1{
+      margin-left: 120px;
+    }
+    .p1{
+      margin-left: 120px;
+    }
+    .right-side-img{
+      margin-left: 180px;
+
+    }
+    .about-heading{
+      margin-top: -800px;
+      margin-bottom: 0px;
+
+    
+    }
+    .about{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+    }
+
+    .about p {
+      margin-top: 10px;
+      margin-left: 130px;
+  }
+  
+     .about-img {
+      margin-top: -2500px;
+      margin-left:100px;
+    }
+    .cardheading{
+      margin-top: -300px;
+    }
+    .container{
+      margin-top: -700px;
+   
+    }
+    .container img{
+      margin-bottom: 20px;
+    }
+
+    .form{
+      margin-left: 120px;
+      margin-top: -600px;
+      
+    }
+    .contact-heading{
+      margin-left: 20px;
+      margin-top: -100px;
+    }
+
+    .cont img{
+      margin-left: 180px;
+      
+    }
+    .right-img{
+      display: flex;
+      flex-direction: column;
+      margin-left: 200px;
+      margin-top: -700px;
+    }
+}

@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <div className="main">
       <div>
-        <div>
+        <div className="img1">
       <Image src="/img1.png" alt="img1" width={300} height={200}/>
       </div>
       <div>
-        <p>Lorem Ipsum is simply dummy text of the printing <br/>and typesetting industry.
+        <p className="p1">Lorem Ipsum is simply dummy text of the printing <br/>and typesetting industry.
            Lorem Ipsum has been the<br/> industry's standard dummy text ever since the 1500s,<br/> 
            when an unknown printer took a galley of type and <br/>scrambled it to make a type specimen book.<br/> 
            It has survived not only five centuries,<br/> but also the leap into electronic typesetting, <br/>

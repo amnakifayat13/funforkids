@@ -4,17 +4,17 @@ function Cards(){
              <div className="cardheading"> Cards</div>
              <div className="container">
              <img  src="/img7.jpeg"/>
-             <div><img  src="/img8.jpeg"/></div>
-             <div><img  src="/img10.jpeg"/></div>
-             <div><img  src="/img9.jpeg"/></div>
-             <div><img  src="/img21.jpeg"/></div>
-             <div><img  src="/img22.jpeg"/></div>
-             <div><img  src="/img20.jpeg"/></div>
-             <div><img  src="/img25.jpeg"/></div>
-             <div><img  src="/img18.jpeg"/></div>
-             <div><img  src="/img26.jpeg"/></div>
-             <div><img  src="/img23.jpeg"/></div>
-             <div><img  src="/img24.jpeg"/></div>
+             <img  src="/img8.jpeg"/>
+             <img  src="/img10.jpeg"/>
+             <img  src="/img9.jpeg"/>
+             <img  src="/img21.jpeg"/>
+             <img  src="/img22.jpeg"/>
+             <img  src="/img20.jpeg"/>
+             <img  src="/img25.jpeg"/>
+             <img  src="/img18.jpeg"/>
+             <img  src="/img26.jpeg"/>
+             <img  src="/img23.jpeg"/>
+             <img  src="/img24.jpeg"/>
              
              
              </div>
