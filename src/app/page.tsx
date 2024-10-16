@@ -8,7 +8,7 @@ export default function Home() {
       <Image src="/img1.png" alt="img1" width={300} height={200}/>
       </div>
       <div>
-        <p className="p1">
+        <p>
        <b>Welcome</b>  to the world of fun and adventure! Here,<br/>
          every click brings you closer to exciting games,<br/>
           colorful stories, and cool surprises. Whether <br/>
